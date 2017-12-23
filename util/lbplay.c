@@ -43,7 +43,7 @@ static const struct {
 };
 
 
-static void lb_cmd_noargs(enum lightbar_command cmd)
+void lb_cmd_noargs(enum lightbar_command cmd)
 {
 	struct ec_params_lightbar_cmd param;
 	param.in.cmd = cmd;
